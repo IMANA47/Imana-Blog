@@ -1,0 +1,88 @@
+### === Fichier .gitignore pour un Mini-Blog Django === ###
+
+# ---- Environnements Virtuels ---- #
+venv/
+.env/
+.venv/
+env/
+ENV/
+pythonenv/
+
+# ---- Fichiers Sensibles / Config ---- #
+*.env
+.env.local
+.env.*.local
+secrets.json
+config_*.py
+db_passwords.txt
+/google-credentials.json
+
+# ---- Base de Données ---- #
+*.sqlite3
+*.db
+/database/
+/migrations/*.py
+! /migrations/__init__.py
+
+# ---- Fichiers Django Générés ---- #
+__pycache__/
+*.py[cod]
+*$py.class
+*.mo
+*.pot
+
+# ---- Static & Media Files ---- #
+/staticfiles/
+/media/
+/uploads/
+.DS_Store
+*.jpg
+*.png
+*.gif
+
+# ---- Cache & Logs ---- #
+*.log
+*.cache
+*.pid
+.npm
+.parcel-cache
+
+# ---- Tests & Coverage ---- #
+.coverage
+htmlcov/
+.pytest_cache/
+/test-reports/
+
+# ---- Paquets Python ---- #
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+
+# ---- Outils Front (si utilisé) ---- #
+node_modules/
+/assets/bundles/
+*.css.map
+*.js.map
+
+# ---- IDEs & Éditeurs ---- #
+.idea/
+.vscode/
+*.swp
+*.sublime-*
+.ropeproject
+
+# ---- Système ---- #
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+._*
+*.bak
+*.tmp
+*.temp
+
+# ---- Fichiers de Déploiement Spécifiques ---- #
+.dockerignore
+docker-compose*.yml
+.database/
+/backups/
